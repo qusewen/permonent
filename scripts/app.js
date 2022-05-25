@@ -1,4 +1,7 @@
-const img = document.querySelector('.aboutme__photo_img')
-console.log(img)
+const burger = document.querySelector('.burger')
+const burgerContent = document.querySelector('.buurger_content')
 
-
+burger.addEventListener('click', openBurger)
+function openBurger(){
+    burgerContent.classList.toggle('activeBurger')
+}
