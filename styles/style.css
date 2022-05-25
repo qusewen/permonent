@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header{
+    background-color: black;
+    padding: 18px 5px 20px;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+.header__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav_link{
+    margin-right: 20px;
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+
+
+
+
+.header__nav_title{
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: 0.3s linear;
+}
+.header__nav_social{
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+.header__nav_social:hover,
+.header__nav_link:hover,
+.header__nav_title:hover
+{
+    color: goldenrod;
+}
+.header__nav_social:nth-child(1){
+    margin-right: 20px;
+}
+
+.aboutme{
+    background-color: black;
+    background-image: url(../assets/img/testbg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    height: 100vh;
+}
+.aboutme__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.aboutme__photo{
+    padding-top: 120px;
+    width: 40%;
+}
+.aboutme__photo_img{
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+    background-image: url(../assets/img/marina.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.aboutme__subtitle{
+    color: white;
+    font-size: 37px
+}
+.aboutme__title{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.aboutme__text{
+    padding-top: 120px;
+    width: 45%;
+}
+
+.aboutme__list{
+    list-style-type: none;
+    margin-bottom: 120px;
+}
+.info{
+    color: white;
+    background-color: grey;
+    border-radius: 0px 20px 20px 0px;
+    padding-left: 45px;
+    margin-bottom: 10px;
+    transition: 0.4s linear;
+    position: relative;
+}
+.info::before{
+    content: '';
+    position: absolute;
+    left: -50px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-image: url(../assets/svg/machine.svg);
+    
+
+}
+.info:hover{
+    color: rgb(145, 112, 30);
+    background-color: antiquewhite;
+    transform: scale(1.2);
+}
+
+.conect{
+
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    padding: 10px 60px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background: linear-gradient(90deg, #ffffff,#cbf0ff,#93e3fd,#ffc5ab);
+    border-radius: 25px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(90deg, #7773c6,#9d6cc0,#bd64b2);
+    color: rgb(255, 255, 255);
+}
+.btn:active{
+    background: linear-gradient(90deg, #5d5b7a,#535155,#504c4f);
+}
