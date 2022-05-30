@@ -289,8 +289,7 @@ details{
   }
   .price__body{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 .price__title{
     color: white;
@@ -314,19 +313,25 @@ details{
   .price_card:hover{
       transform: scale(1.08);
   }
+  .card__title_tatoo{
+      margin-top: 30px;
+  }
 .card__title{
+    color: white;
     font-size: 30px;
     margin-bottom: 40px;
     text-align: center;
 }
 .card__subtitle{
     font-size: 20px;
+    color: white;
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+    border-bottom: 1px solid white;
 }
 .card_coust{
-    color: red;
+    color: #8f8f8f;
 }
 .btn_card{
     margin: 0 auto;
