@@ -19,10 +19,10 @@
                 <nav class="header__nav">
                     <a href="#" class="header__nav_link">Главная</a>
                     <a href="#quality" class="header__nav_link">Знакомство</a>
-                    <a href="" class="header__nav_link">Услуги</a>
-                    <a href="" class="header__nav_link">Работы</a>
-                    <a href="" class="header__nav_link">Вопросы</a>
-                    <a href="" class="header__nav_link">Отзывы</a>
+                    <a href="#pric" class="header__nav_link">Услуги</a>
+                    <a href="#prew" class="header__nav_link">Работы</a>
+                    <a href="#quest" class="header__nav_link">Вопросы</a>
+                    <a href="#review" class="header__nav_link">Отзывы</a>
                 </nav>
                 
                 <div class="social">
@@ -38,10 +38,10 @@
                 <div class="buurger_content">
                     <a href="#" class="header__nav_link">Главная</a>
                     <a href="#quality" class="header__nav_link">Знакомство</a>
-                    <a href="" class="header__nav_link">Услуги</a>
-                    <a href="" class="header__nav_link">Работы</a>
-                    <a href="" class="header__nav_link">Вопросы</a>
-                    <a href="" class="header__nav_link">Отзывы</a>
+                    <a href="#pric" class="header__nav_link">Услуги</a>
+                    <a href="#prew" class="header__nav_link">Работы</a>
+                    <a href="#quest" class="header__nav_link">Вопросы</a>
+                    <a href="#review" class="header__nav_link">Отзывы</a>
                     <a href="tel:+375295998687" class="btn burger_btn">Позвонить</a>
                     <a href="##" class="btn burger_btn">Записаться</a>
                 </div>
@@ -137,36 +137,10 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="pric">
             <div class="container">
                 <h2 class="price__title">Цены на услуги</h2>
                 <div class="price__body">
-                    <!-- <div class="price_card">
-                        <h2 class="card__title">Перманентный макияж:</h2>
-                        <div class="subtitle_containe">
-                            <p class="card__subtitle">Бровей <span class="card_coust">170 BYN</span></p>
-                            <p class="card__subtitle">Губ <span class="card_coust">170 BYN</span></p>
-                            <p class="card__subtitle">Межресничного пространства <span class="card_coust">120 BYN</span></p>
-                            <p class="card__subtitle">Коррекция(через 1,5-2 месяца)<span class="card_coust">120 BYN</span></p>
-                        </div>
-                        <a href="##" class="btn btn_card">Записаться</a>
-                    </div>
-                    <div class="price_card">
-                        <h2 class="card__title">Мини тату:</h2>
-                       <div class="subtitle_containe">
-                            <p class="card__subtitle">Татуировка<span class="card_coust">от 60 BYN</span></p>
-                            <p class="card__subtitle">Коррекция<span class="card_coust">от 40 BYN</span></p>
-                       </div>
-                        <a href="##" class="btn btn_card">Записаться</a>
-                    </div>
-                    <div class="price_card">
-                        <h2 class="card__title">Моделирование и окрашивание бровей:</h2>
-                       <div class="subtitle_containe">
-                            <p class="card__subtitle">Краской<span class="card_coust">15 BYN</span></p>
-                            <p class="card__subtitle">Хной<span class="card_coust">20 BYN</span></p>
-                       </div>
-                        <a href="##" class="btn btn_card">Записаться</a>
-                    </div> -->
                     <div class="price__card">
                         <ul class="price__item">
                             <h2 class="card__title">Перманентный макияж:</h2>
@@ -180,13 +154,28 @@
                             <h2 class="card__title card__title_tatoo">Моделирование и окрашивание бровей:</h2>
                             <li class="card__subtitle">Краской<span class="card_coust">15 BYN</span></li>
                             <li class="card__subtitle">Хной<span class="card_coust">20 BYN</span></li>
+                            <a href="##" class="btn btn_card">Записаться</a>
                         </ul>
-
+               
+                    </div>
+                </div>
+            </div>
+            <div class="bottomimg"></div>
+        </section>
+        <section class="work" id="prew">
+            <div class="container">
+                <div class="work__body">
+                    <h2 class="work__title">Мои работы</h2>
+                    <div class="slider__body">
+                        <div class="prev__slide"><img src="assets/svg/prev.svg" alt="prevslide"></div>
+                        <div class="img_slide"></div>
+                        <div class="next__slide"><img src="assets/svg/next.svg" alt="nextslide"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="question">
+        <section class="question" id="quest">
+            <div class="top__img"></div>
             <div class="container">
                 <h2 class="question__title">Часто задаваемые вопросы</h2>
                 <div class="question__body">
@@ -309,20 +298,65 @@
             </div>
         </section>
 
-        <section class="map">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A15a791b2fcb24ecdf4b3368183455372bf315b18e5f2d1f50197558198e41232&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe>
+        <section class="reviews" id="review">
+            <div class="conatainer">
+                <h2 class="reviews__title">Отзывы клиентов</h2>
+                <div class="reviews__body">
+                    <div class="reviews__slider_body">
+                        <div class="reviews__slider_prev"><img src="assets/svg/prev.svg" alt="prevslide"></div>
+                        <div class="reviews__slider_img"></div>
+                        <div class="reviews__slider_next"><img src="assets/svg/next.svg" alt="nextslide"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="record">
+    <h2 class="record__title">Записаться на процедуру</h2>
+    <div class="container">
+        <div class="record__body">
+            <div class="default"><img src="assets/img/contact.png" alt=""></div>
+            <form class="record__form" action="feedback/send.php" method="post" enctype="multipart/form-data" novalidate>
+                <input class="input_text" name="name" type="text" placeholder="Ваше имя:">
+                <input class="input_text" name="service" type="text" placeholder="Вид услуги:">
+                <input class="input_text" name="number" type="tel" placeholder="Номер для связи:">
+                <textarea class="input_text input_textarea" name="coment" id="" cols="30" rows="3" placeholder="Коментарий к записи"></textarea>
+                <input type="submit"  value="Записаться" class="sub">
+            </form>
+        </div>
+    </div>
+    <div class="bottomimg "></div>
+</section>
+
+
+        <section class="map__contact">
+            <div class="container">
+                <h2 class="contact__title">Контакты</h2>
+<div class="contact__body">
+                    <div class="contact_info">
+                        <ul class="contact_text">
+                            <li class="contact__item"><h2 class="text__contact">Номер:</h2> <p class="text__contact_sub">+375295998687</p></li>
+                            <li class="contact__item"><h2 class="text__contact">Адрес:</h2> <p class="text__contact_sub">Гостиница просп. Франциска Скорины, 13, Полоцк, Беларусь</p></li>
+                            <h2 class="text__contact text__contact_title">Социальные сети</h2>
+                            <li class="contact__item"><a class="social_contact" href="">Instagram</a></li>
+                            <li class="contact__item"><a class="social_contact" href="">Vkontakte</a></li>
+                        </ul>
+                    </div>
+                    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A15a791b2fcb24ecdf4b3368183455372bf315b18e5f2d1f50197558198e41232&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe>
+</div>
+            </div>
         </section>
 
 
 
 
 
-
-
-
-
-
     </main>
+    <footer class="footer">
+        <div class="container">
+            
+        </div>
+    </footer>
     <script src="scripts/app.js"></script>
 </body>
 </html>
