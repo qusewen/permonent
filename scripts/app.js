@@ -69,3 +69,16 @@ function handlNextrev(){
 	mewImg.src = `assets/img/rew${b}.jpg`
 	reviwSlider.append(mewImg)
 }
+prevSlideRev.addEventListener('click',handlPrevrev)
+
+function handlPrevrev(){
+	b--
+	if(b < 0){
+		b = 7
+	}
+	reviwSlider.innerHTML = ''
+	const mewImg = document.createElement('img')
+	mewImg.classList.add('img_slide_photo')
+	mewImg.src = `assets/img/rew${b}.jpg`
+	reviwSlider.append(mewImg)
+}

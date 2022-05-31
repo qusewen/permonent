@@ -430,7 +430,7 @@ details{
 }
 .reviews__slider_body{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .sub{
@@ -505,6 +505,7 @@ details{
 }
 .map__contact{
     background-color: #f4f4f4;
+    padding-bottom: 60px;
 
 }
 .contact_info{
@@ -542,8 +543,20 @@ details{
     color: goldenrod;
 }
 .footer{
+    background-color: #f4f4f4;
     border-top: 2px black solid;
     padding: 25px;
+}
+.footer__nav{
+    display: flex;
+    flex-direction: column;
+}
+.footer__nav_link{
+    color: black;
+    margin-bottom: 20px;
+}
+.footer__nav_link:last-child{
+    margin-bottom: 0;
 }
 /* //adaptive// */
 
