@@ -6,10 +6,52 @@ const photoSlide = document.querySelector('.img_slide')
 const prevSlideRev = document.querySelector('.reviews__slider_prev')
 const nextSlideRev = document.querySelector('.reviews__slider_next')
 const reviwSlider = document.querySelector('.reviews__slider_img')
-burger.addEventListener('click', openBurger)
-function openBurger(){
-    burgerContent.classList.toggle('activeBurger')
+const burgerBtn = document.querySelectorAll('.burger_link')
+const ststus = document.querySelector('.status')
+ststus.addEventListener('click', clothesStatus)
+function clothesStatus(){
+	ststus.classList.add('closestatus')
 }
+burger.addEventListener('click', openBurger)
+console.log(burgerBtn)
+let burgerActive = false;
+
+
+burgerBtn.forEach((i) => {
+    i.addEventListener("click", hendleclose)
+})
+function hendleclose(){
+	burgerContent.classList.remove('activean')
+	burgerContent.classList.add('anactivean')
+	burgerActive = false
+	setTimeout(closeBurg, 400)
+	function closeBurg(){
+		burgerContent.classList.remove('activeBurger')
+	}
+	
+}
+
+function openBurger(){
+
+	if(burgerActive === false){
+		burgerContent.classList.remove('anactivean')
+		burgerContent.classList.toggle('activean')
+		burgerContent.classList.add('activeBurger')
+		burgerActive = true
+
+	}else{
+		burgerContent.classList.remove('activean')
+		burgerContent.classList.add('anactivean')
+		burgerActive = false
+		setTimeout(closeBurg, 400)
+		function closeBurg(){
+			burgerContent.classList.remove('activeBurger')
+		}
+	}
+
+}
+
+
 let a = 1;
 let b = 1;
 
@@ -34,7 +76,7 @@ prevSlide.addEventListener('click', handlePrevsl)
 function handlePrevsl() {
 	a--
 	if(a < 0){
-		a = 11
+		a = 19
 	}
 
 	photoSlide.innerHTML = ''
@@ -46,7 +88,7 @@ function handlePrevsl() {
 nextSlide.addEventListener('click', handleNextsl)
 function handleNextsl() {
 	a++
-	if(a > 11){
+	if(a > 19){
 		a = 0
 	}
 
