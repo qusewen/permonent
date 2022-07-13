@@ -482,6 +482,10 @@ details{
      width: 40px;
 
 }
+.burger__btn_recording{
+    display: flex;
+    align-items: center;
+}
 
 .prev__slide:hover,
 .next__slide:hover,
@@ -672,7 +676,14 @@ details{
     align-items: center;
     animation: backInLeft 1.2s;
 }
-/* //adaptive// */
+.closepop{
+    margin-top: 80px;
+    color: rgba(255, 255, 255, 0.466);
+}
+.colortexttoggle{
+    color: greenyellow;
+    transform: scale(1.2);
+}
 
 @media (max-width: 1100px){
 
@@ -865,6 +876,7 @@ details{
         display: none;
     }
 
+
     .aboutme__list{
         margin-bottom: 0;
             width: 71%;
@@ -919,6 +931,14 @@ details{
     .img_slide_photo{
         height: 280px;
     }
+    .stock p{
+        width: 70%;
+        font-size: 25px;
+    }
+
+    .activeBurger{
+        justify-content: flex-start
+    }
 }
 @media (max-width: 400px){
     .aboutme__photo_img {
@@ -962,4 +982,26 @@ details{
     .default img{
         width: 200px;
     }
+}
+.stock{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: fixed;
+    z-index: 99;
+    background: #000000ce;
+    backdrop-filter: blur(3px);
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+.activpopap{
+    display: flex;
+    left: 0;
+    top: 0;
 }
