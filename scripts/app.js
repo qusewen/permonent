@@ -29,7 +29,6 @@ function promoText (){
 }
 setInterval(promoText, 400)
 burger.addEventListener("click", openBurger);
-console.log(burgerBtn);
 let burgerActive = false;
 
 burgerBtn.forEach((i) => {
@@ -88,7 +87,7 @@ prevSlide.addEventListener("click", handlePrevsl);
 function handlePrevsl() {
   a--;
   if (a < 0) {
-    a = 19;
+    a = 12;
   }
 
   photoSlide.innerHTML = "";
@@ -100,7 +99,7 @@ function handlePrevsl() {
 nextSlide.addEventListener("click", handleNextsl);
 function handleNextsl() {
   a++;
-  if (a > 19) {
+  if (a > 12) {
     a = 0;
   }
 
